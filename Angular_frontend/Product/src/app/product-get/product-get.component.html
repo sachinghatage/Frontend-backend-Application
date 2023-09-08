@@ -1,0 +1,23 @@
+<h3>Products</h3>
+<table class="table">
+    <tr class="bg-info text-white">
+        <th>ID</th>
+        <th>NAME</th>
+        <th>COST</th>
+        <th>DESCRIPTION</th>
+        <th>VENDOR</th>
+    </tr>
+    <tr *ngFor = "let p of products">
+        <td>{{ p.productId }}</td>
+        <td>{{ p.productName }}</td>
+        <td>{{ p.productCost }}</td>
+        <td>{{ p.productDescription }}</td>
+        <td>{{ p.vendor }}</td>
+        <td>
+            <button class="btn btn-danger" (click)="deleteProduct(p.productId)">DELETE</button>
+           <!-- <button class="btn btn-danger" routerLink="/remove/{{ p.productId }}">DELETE</button>-->
+            <button class="btn btn-success" routerLink="/update/{{ p.productId }}">UPDATE</button>
+            
+        </td>
+    </tr>
+</table>

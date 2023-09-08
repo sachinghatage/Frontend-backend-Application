@@ -1,0 +1,34 @@
+<!-- Your Angular component template file -->
+
+<form [formGroup]="fg" (submit)="updateProduct()">
+    <div>
+      <label for="productId">Product ID:</label>
+      <input type="text" id="productId" name="productId"  formControlName="productId">
+    </div>
+  
+    <div>
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName"  formControlName="productName">
+    </div>
+  
+    <div>
+      <label for="productCost">Product Cost:</label>
+      <input type="number" id="productCost" name="productCost"  formControlName="productCost">
+    </div>
+  
+    <div>
+      <label for="productDescription">Product Description:</label>
+      <input type="text" id="productDescription" name="productDescription" formControlName="productDescription">
+    </div>
+  
+    <div>
+      <label for="productVendor">Product Vendor:</label>
+      <input type="text" id="productVendor" name="productVendor" formControlName="productVendor" >
+    </div>
+  
+    <div>
+    <button type="submit">Update Product</button>
+    </div>
+  </form>
+  
+  

@@ -1,0 +1,30 @@
+<h1>Save Products</h1>
+
+<form [formGroup]="fg" (submit)="saveProduct()">
+    <div>
+        <label for="productId">Product ID:</label>
+        <input type="text" id="productId" name="productId"  formControlName="productId">
+    </div>
+    <div>
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" formControlName="productName"/>
+    </div>
+    <div>
+        <label for="productCost">Product Cost:</label>
+        <input type="text" id="productCost" name="productCost" formControlName="productCost"/>
+    </div>
+    <div>
+        <label for="productDescription">Product Description:</label>
+        <input type="text" id="productDescription" name="productDescription" formControlName="productDescription"/>
+    </div>
+    <div>
+        <label for="vendor">Product Vendor:</label>
+        <input type="text" id="vendor" name="vendor" formControlName="vendor"/>
+    </div>
+
+    <div>
+        <button type="submit">Save Product</button>
+    </div>
+
+
+</form>
